@@ -1,4 +1,4 @@
-<section class="about-2">
+<section class="about-2" id="employerView" style="display:none">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-lg-offset-1">
