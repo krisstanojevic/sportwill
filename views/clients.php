@@ -7,36 +7,16 @@
                     </div>
                     <div class="col-lg-12">
                         <ul id="clients-carousel" class="text-center">
+                            <?php
+                                $upit = "SELECT * FROM sponsors INNER JOIN gallery ON sponsors.gallery_id=gallery.id_gallery INNER JOIN gallery_type ON gallery.gallery_type_id=gallery_type.id_gallery_type WHERE gallery_type.name='sponsor'";
+                                $sponsors = executeQuery($upit);
+                                foreach($sponsors as $sponsor):
+                            ?>
                             <li class="item">
-                                <img class="img-responsive" src="assets/img/demo-clients/1.png" alt="">
+                                <img class="img-responsive" src=" <?= $sponsor->path ?>" alt="<?= $sponsor->alt ?>">
                             </li>
-                            <li class="item">
-                                <img class="img-responsive" src="assets/img/demo-clients/2.png" alt="">
-                            </li>
-                            <li class="item">
-                                <img class="img-responsive" src="assets/img/demo-clients/3.png" alt="">
-                            </li>
-                            <li class="item">
-                                <img class="img-responsive" src="assets/img/demo-clients/4.png" alt="">
-                            </li>
-                            <li class="item">
-                                <img class="img-responsive" src="assets/img/demo-clients/5.png" alt="">
-                            </li>
-                            <li class="item">
-                                <img class="img-responsive" src="assets/img/demo-clients/6.png" alt="">
-                            </li>
-                            <li class="item">
-                                <img class="img-responsive" src="assets/img/demo-clients/7.png" alt="">
-                            </li>
-                            <li class="item">
-                                <img class="img-responsive" src="assets/img/demo-clients/8.png" alt="">
-                            </li>
-                            <li class="item">
-                                <img class="img-responsive" src="assets/img/demo-clients/9.png" alt="">
-                            </li>
-                            <li class="item">
-                                <img class="img-responsive" src="assets/img/demo-clients/10.png" alt="">
-                            </li>
+                                <?php endforeach; ?>
+                            
                         </ul>
                     </div>
                 </div>

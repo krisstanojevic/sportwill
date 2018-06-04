@@ -1,5 +1,6 @@
 <?php
 
+    include "config/connection.php";
 
     include "views/head.php";
     include "views/header.php";

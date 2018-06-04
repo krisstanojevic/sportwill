@@ -1,4 +1,9 @@
 <footer class="footer-1">
+            <?php
+                $upit = "SELECT * FROM gym";
+                $gym = executeQuery($upit);            
+
+            ?>
             <div class="upper">
                 <div class="container">
                     <div class="row">
@@ -44,10 +49,10 @@
                             <h4>Social</h4>
                             <ul class="list-inline">
                                 <li>
-                                    <a href="#" class="btn btn-social-light btn-facebook"><i class="fa fa-fw fa-facebook"></i></a>
+                                    <a href="<?= $gym[0]->facebook ?>" class="btn btn-social-light btn-facebook" target = "_blank"><i class="fa fa-fw fa-facebook"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#" class="btn btn-social-light btn-instagram"><i class="fa fa-fw fa-instagram"></i></a>
+                                    <a href="<?= $gym[0]->instagram ?>" class="btn btn-social-light btn-instagram" target = "_blank"><i class="fa fa-fw fa-instagram"></i></a>
                                 </li>
                             </ul>
                         </div>
