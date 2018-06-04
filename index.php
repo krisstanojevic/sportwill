@@ -1,5 +1,4 @@
 <?php
-    include "konekcija.php";
 
 
     include "views/head.php";
