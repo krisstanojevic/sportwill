@@ -6,6 +6,7 @@
     include "views/header.php";
     include "views/nav.php";
     include "views/about.php";
+    include "views/aboutview.php";
     include "views/feauters.php";
     include "views/galery.php";
     include "views/clients.php";
