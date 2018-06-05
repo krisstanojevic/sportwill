@@ -11,7 +11,7 @@ $(document).ready(function () {
                 idEmployer : id
             },
             success : function(data) {
-                //console.log(data[0]);
+                console.log(data[0]);
                 
                 //Ja sam uzela html elemente iz aboutview.php i popunila ih odavde, ono sto uhavi iz baze,
                 //sa imenom osobe, opisom osobe, linkovima... za onaj opis (biografiju)
@@ -20,6 +20,7 @@ $(document).ready(function () {
                 document.getElementById('employerView').style.display = "block";
                 document.getElementById('name_surname').textContent = "About " + data[0].name + " " + data[0].surname;
                 document.getElementById('description').textContent = data[0].description;
+                document.getElementById('image').setAttribute('src', data[0].path);
                 document.getElementById('facebook').setAttribute('href', data[0].facebook);
                 document.getElementById('instagram').setAttribute('href', data[0].instagram);
                 document.getElementById('twitter').setAttribute('href', data[0].twitter);

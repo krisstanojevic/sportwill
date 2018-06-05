@@ -2,7 +2,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-lg-offset-1">
-                        <img src="assets/img/demo-portraits/portrait-1.jpg" class="img-circle img-responsive img-centered dark-faded-border" alt="">
+                        <img id="image" class="img-circle img-responsive img-centered dark-faded-border" alt="">
                     </div>
                     <div class="col-lg-5 text-center">
                         <h2 id="name_surname"></h2>
