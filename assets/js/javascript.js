@@ -21,6 +21,7 @@ $(document).ready(function () {
                 document.getElementById('name_surname').textContent = "About " + data[0].name + " " + data[0].surname;
                 document.getElementById('description').textContent = data[0].description;
                 document.getElementById('image').setAttribute('src', data[0].path);
+                document.getElementById('image').setAttribute('alt', data[0].alt);
                 document.getElementById('facebook').setAttribute('href', data[0].facebook);
                 document.getElementById('instagram').setAttribute('href', data[0].instagram);
                 document.getElementById('twitter').setAttribute('href', data[0].twitter);
