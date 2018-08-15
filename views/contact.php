@@ -3,8 +3,26 @@
                 <div class="row">
                     <div class="col-lg-6" data-scrollreveal="enter left over 1.5s">
                         <h2>Contact Us</h2>
-                        <p>Spectrum comes loaded with a working contact form! Just follow the instructions in the documentation to get your form working. All you need to do is change an email address, no code writing required!</p>
-                        <p>The contact form to the right is a demo form and will not send email to Start Bootstrap. If you have a question about the theme, please contact us through our WrapBootstrap profile.</p>
+                            <div id="contact-map">
+				            	<div id="googleMap" style="width:100%;height:400px;"></div>
+					            <script>
+					            	var uluru = {lat: 44.660574, lng: 20.930972};
+					            	function myMap() {
+					            		var mapProp = {
+					            		center: new google.maps.LatLng(44.660574, 20.930972),
+					            		zoom: 15,
+				            		};
+					            	var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+					            	var marker = new google.maps.Marker({
+					            		position: uluru,
+					            		map: map
+				            		});
+                                    }
+                                 </script>
+
+                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPpWijYim26cE5rd7Oj03sqQHhc-k1N3I&callback=myMap"></script>
+                            </div>
+                
                     </div>
                     <div class="col-lg-5 col-lg-offset-1" data-scrollreveal="enter right over 1.5s">
                         <br>

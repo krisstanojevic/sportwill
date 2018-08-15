@@ -35,7 +35,7 @@
     <!-- <link href="assets/css/spectrum-aqua.css" rel="stylesheet"> -->
     <!-- <link href="assets/css/spectrum-coffee.css" rel="stylesheet"> -->
     <!-- <link href="assets/css/spectrum-coral.css" rel="stylesheet"> -->
-    <link href="assets/css/spectrum-lavender.css" rel="stylesheet">
+    <link href="assets/css/spectrum-red.css" rel="stylesheet">
     <!-- <link href="assets/css/spectrum-olive.css" rel="stylesheet"> -->
     <!-- <link href="assets/css/spectrum-orange.css" rel="stylesheet"> -->
     <!-- <link href="assets/css/spectrum-peach.css" rel="stylesheet"> -->

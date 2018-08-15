@@ -920,6 +920,12 @@ a.light-text:focus {
   }
 }
 @media (min-width: 767px) {
+  .about-img-1 {
+    background-image: url(../img/demo-portraits/portrait-2.jpg);
+  }
+  .about-img-2 {
+    background-image: url(../img/demo-portraits/portrait-1.jpg);
+  }
   
 }
 .blog-1 .blog-col {

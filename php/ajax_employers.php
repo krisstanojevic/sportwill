@@ -18,7 +18,7 @@ if(isset($_GET['idEmployer'])){
     try{
         $employer = $konekcija->query($query)->fetchAll();
         if($employer){
-            $statusCode = 204;
+            $statusCode = 201;
         }
         else {
             $statusCode = 500;
@@ -34,7 +34,7 @@ if(isset($_GET['idEmployer'])){
     //moramo drugacije da posaljemo $statusCode ili ove podatke! 
     //jeste li vi slali na vezbama oba u isto vreme?
     
-    //http_response_code($statusCode);    
+    http_response_code($statusCode);    
     echo json_encode($employer);
 }
 

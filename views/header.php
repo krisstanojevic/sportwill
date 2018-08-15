@@ -12,7 +12,6 @@
             <?php
                 $upit = "SELECT * FROM gallery INNER JOIN gallery_type ON gallery.gallery_type_id=gallery_type.id_gallery_type WHERE gallery_type.name='slider'";
                 $sliderPic = executeQuery($upit);
-                var_dump($sliderPic);
                 ?>
 
             <div class="carousel-inner">
@@ -24,13 +23,13 @@
                     <div class="overlay"></div>
                     <div class="carousel-caption">
                         <div class="intro-body">
-                            <p class="intro-welcome">Welcome to Spectrum!</p>
+                            <p class="intro-welcome">Sportwil!</p>
                             <br>
                             <h1 class="brand-heading">
-                                A
-                                <span class="text-primary">Multipurpose</span>
-                                <br>One Page
-                                <span class="text-primary">Theme</span>
+                                
+                                <span class="text-primary">THIS IS</span>
+                                <br>SPARTA
+                                
                             </h1>
                             <hr class="light">
                             <div class="page-scroll" data-scrollreveal="enter bottom after .6s">

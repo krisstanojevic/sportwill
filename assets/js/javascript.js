@@ -16,8 +16,9 @@ $(document).ready(function () {
                 //Ja sam uzela html elemente iz aboutview.php i popunila ih odavde, ono sto uhavi iz baze,
                 //sa imenom osobe, opisom osobe, linkovima... za onaj opis (biografiju)
                 //koja ce da se prikaze kad se klikne 
-                
-                document.getElementById('employerView').style.display = "block";
+                $("#employerView").css("display","none");
+                $("#employerView").slideDown();
+                //$(this).scrollTo($('#employerView'), 1000);
                 document.getElementById('name_surname').textContent = "About " + data[0].name + " " + data[0].surname;
                 document.getElementById('description').textContent = data[0].description;
                 document.getElementById('image').setAttribute('src', data[0].path);

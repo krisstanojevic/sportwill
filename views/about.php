@@ -1,6 +1,6 @@
 
 
-        <section class="about-3 bg-lighter text-center">
+        <section id="about" class="about-3 bg-lighter text-center">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 col-md-6">
@@ -17,7 +17,7 @@
                             ?>
                             <?php foreach($employers as $employer): ?>
 
-                            <div class="item" style="background-image: url(<?= $employer->path ?>);">
+                            <div class="item about-img-<?= $employer->id_employers?>">
                                 <div class="info employer" data-id="<?=$employer->id_employers?>">
                                     <!-- Mobile Fallback Image -->
                                     <img class="img-responsive img-circle visible-xs" src="<?= $employer->path ?>" alt=" <?= $employer->alt ?>">
